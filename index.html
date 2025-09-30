@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aab-e-Hayaat | The Essence of Life</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for custom styles and Inter font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-gold': '#d9ad67', // Muted elegant gold/brass accent
+                        'bg-deep': '#0a0a0a', // Near black background
+                        'bg-card': '#1a1a1a', // Slightly lighter dark background
+                        'text-light': '#f5f5f5',
+                        'text-muted': '#a0a0a0',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Load Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-bg-deep text-text-light antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-10 bg-bg-deep/95 backdrop-blur-sm shadow-xl shadow-black/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-3xl font-extrabold tracking-wider text-primary-gold">
+                Aab-e-Hayaat
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#hero" class="text-text-muted hover:text-primary-gold transition duration-300 font-semibold">Home</a>
+                <a href="#collection" class="text-text-muted hover:text-primary-gold transition duration-300 font-semibold">Collection</a>
+                <a href="#signature" class="text-text-muted hover:text-primary-gold transition duration-300 font-semibold">Signature Scents</a>
+                <a href="#contact" class="text-text-muted hover:text-primary-gold transition duration-300 font-semibold">Enquire</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="hidden md:block bg-primary-gold hover:bg-yellow-700 text-bg-deep font-bold py-2 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+                Shop Now
+            </a>
+
+            <!-- Mobile Menu Button (Simple SVG placeholder) -->
+            <button id="mobile-menu-button" class="md:hidden text-primary-gold hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-bg-card/90 py-2 border-t border-primary-gold/30">
+            <a href="#hero" class="block px-4 py-2 text-text-light hover:bg-bg-deep/50">Home</a>
+            <a href="#collection" class="block px-4 py-2 text-text-light hover:bg-bg-deep/50">Collection</a>
+            <a href="#signature" class="block px-4 py-2 text-text-light hover:bg-bg-deep/50">Signature Scents</a>
+            <a href="#contact" class="block px-4 py-2 text-text-light hover:bg-bg-deep/50">Enquire</a>
+            <a href="#contact" class="block text-center mt-2 mx-4 bg-primary-gold hover:bg-yellow-700 text-bg-deep font-bold py-2 rounded-lg transition duration-300">
+                Shop Now
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="py-20 md:py-32 bg-bg-deep border-b border-primary-gold/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- Pre-heading -->
+                <p class="text-lg font-medium text-primary-gold uppercase tracking-widest mb-3">The Art of Pure Fragrance</p>
+
+                <!-- Headline -->
+                <h1 class="text-4xl sm:text-6xl font-extrabold leading-snug text-text-light mb-6">
+                    Discover <span class="block lg:inline text-primary-gold">Aab-e-Hayaat</span>
+                    <span class="block text-2xl sm:text-4xl font-light text-text-muted mt-2">The Water of Life</span>
+                </h1>
+
+                <!-- Subtitle/Description -->
+                <p class="text-lg text-text-muted max-w-4xl mx-auto mb-10">
+                    Experience the timeless luxury of authentic, non-alcoholic attar, meticulously distilled from the finest natural ingredients. Each drop is a journey.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#collection" class="bg-primary-gold hover:bg-yellow-700 text-bg-deep font-bold py-3 px-10 rounded-xl shadow-2xl shadow-primary-gold/30 transition duration-300 transform hover:scale-105">
+                        View Our Collection
+                    </a>
+                    <a href="#signature" class="bg-bg-card hover:bg-gray-800 text-primary-gold font-bold py-3 px-10 rounded-xl border border-primary-gold/50 transition duration-300 transform hover:scale-105">
+                        Our Story
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Attar Collection Section -->
+        <section id="collection" class="py-20 bg-bg-card">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-text-light border-b-2 border-primary-gold inline-block pb-2">The Aab-e-Hayaat Collection</h2>
+                    <p class="mt-4 text-xl text-text-muted">Pure extracts. Unforgettable presence. Crafted over generations.</p>
+                </div>
+
+                <!-- Collection Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                    <!-- Attar 1: Earth (Mitti) -->
+                    <div class="bg-bg-deep p-8 rounded-xl shadow-3xl shadow-black/70 border border-primary-gold/10 hover:border-primary-gold transition duration-300 text-center">
+                        <div class="text-primary-gold mb-4 mx-auto">
+                            <!-- Icon: Leaf/Nature -->
+                            <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-4a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary-gold mb-3">Mitti Attar</h3>
+                        <p class="text-text-light font-medium mb-3">The Scent of the First Rain</p>
+                        <p class="text-text-muted">A uniquely grounding and nostalgic fragrance, captured by hydro-distillation of baked clay. It evokes the petrichor of monsoon showers.</p>
+                        <a href="#contact" class="mt-5 inline-block text-sm font-semibold text-primary-gold hover:text-white transition duration-300 border-b border-primary-gold/50">
+                            Explore Mitti &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Attar 2: Floral (Rose/Jasmine) -->
+                    <div class="bg-bg-deep p-8 rounded-xl shadow-3xl shadow-black/70 border border-primary-gold/10 hover:border-primary-gold transition duration-300 text-center">
+                        <div class="text-primary-gold mb-4 mx-auto">
+                            <!-- Icon: Flower/Bloom -->
+                            <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.938.412 7.08-.804M4 14v.01M16 19v.01M18 14v.01M7 19v.01M9 14v.01M12 12V6M9 6h6m-3 0h.01M12 6a3 3 0 110-6 3 3 0 010 6z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary-gold mb-3">Gulab & Motia</h3>
+                        <p class="text-text-light font-medium mb-3">Intense Floral Harmony</p>
+                        <p class="text-text-muted">A classic blend of Damask Rose and Arabian Jasmine (Motia). A concentrated essence of romance, power, and traditional perfumery.</p>
+                        <a href="#contact" class="mt-5 inline-block text-sm font-semibold text-primary-gold hover:text-white transition duration-300 border-b border-primary-gold/50">
+                            Discover Florals &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Attar 3: Wood/Resin (Oud/Sandalwood) -->
+                    <div class="bg-bg-deep p-8 rounded-xl shadow-3xl shadow-black/70 border border-primary-gold/10 hover:border-primary-gold transition duration-300 text-center">
+                        <div class="text-primary-gold mb-4 mx-auto">
+                            <!-- Icon: Wood/Bottle -->
+                            <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8h12a2 2 0 002-2v-3a2 2 0 00-2-2H6a2 2 0 00-2 2v3a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary-gold mb-3">Sandal & Oud Reserve</h3>
+                        <p class="text-text-light font-medium mb-3">Deep, Timeless Masculinity</p>
+                        <p class="text-text-muted">A rich, smoky base of aged Sandalwood and exotic Agarwood (Oud). The quintessential scent of warmth, status, and longevity.</p>
+                        <a href="#contact" class="mt-5 inline-block text-sm font-semibold text-primary-gold hover:text-white transition duration-300 border-b border-primary-gold/50">
+                            Shop Reserves &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Scents Section (Pricing/Highlight) -->
+        <section id="signature" class="py-20 bg-bg-deep border-t border-b border-primary-gold/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold text-text-light">Our Signature Offering</h2>
+                    <p class="mt-4 text-xl text-text-muted">A curated experience for the discerning connoisseur.</p>
+                </div>
+                
+                <!-- Signature Card -->
+                <div class="max-w-3xl mx-auto md:flex bg-bg-card p-6 md:p-10 rounded-xl shadow-4xl border border-primary-gold/50">
+                    <div class="md:w-1/3 flex justify-center items-center mb-6 md:mb-0 md:pr-6">
+                        <!-- Icon: Diamond/Luxury Seal -->
+                        <svg class="w-20 h-20 text-primary-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.871L12.564 5.762A2.08 2.08 0 0014.28 6.94l3.125.454a2.08 2.08 0 011.16 3.538l-2.269 2.21A2.08 2.08 0 0016 14.925l.536 3.116a2.08 2.08 0 01-3.018 2.186L12 19.385l-2.718 1.432a2.08 2.08 0 01-3.018-2.186l.536-3.116a2.08 2.08 0 00-.585-1.856l-2.269-2.21a2.08 2.08 0 011.16-3.538l3.125-.454A2.08 2.08 0 0011.049 2.871z"></path></svg>
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h3 class="text-3xl font-bold text-primary-gold mb-3">The Royal Amber</h3>
+                        <p class="text-text-muted mb-4">A mesmerizing, warm, and inviting attar with notes of Madagascar Vanilla, Labdanum resin, and pure Dehnal Oud. Presented in a hand-cut crystal bottle.</p>
+                        <p class="text-2xl font-bold text-text-light mb-6">Price: $120 USD (5ml)</p>
+                        <a href="#contact" class="inline-block bg-primary-gold hover:bg-yellow-700 text-bg-deep font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
+                            Order The Royal Amber
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/Enquiry Form Section -->
+        <section id="contact" class="py-20 bg-bg-card">
+            <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold text-text-light">Enquire About Our Attars</h2>
+                    <p class="mt-4 text-xl text-text-muted">Connect with our Fragrance Curator for personalized recommendations.</p>
+                </div>
+
+                <!-- Contact Form (Non-functional mock-up) -->
+                <form class="bg-bg-deep p-8 rounded-xl shadow-2xl shadow-black/70 border border-primary-gold/10">
+                    <div class="mb-6">
+                        <label for="name" class="block text-sm font-medium text-text-muted mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-3 rounded-lg bg-bg-card text-text-light border border-primary-gold/20 focus:ring-primary-gold focus:border-primary-gold transition duration-300" placeholder="Your Name">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-sm font-medium text-text-muted mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full p-3 rounded-lg bg-bg-card text-text-light border border-primary-gold/20 focus:ring-primary-gold focus:border-primary-gold transition duration-300" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-medium text-text-muted mb-2">Your Enquiry</label>
+                        <textarea id="message" name="message" rows="4" class="w-full p-3 rounded-lg bg-bg-card text-text-light border border-primary-gold/20 focus:ring-primary-gold focus:border-primary-gold transition duration-300" placeholder="I am interested in the Mitti Attar..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary-gold hover:bg-yellow-700 text-bg-deep font-bold py-3 rounded-xl shadow-lg transition duration-300">
+                        Submit Enquiry
+                    </button>
+                    <!-- Message box instead of alert() -->
+                    <p id="form-message" class="mt-4 text-center text-sm text-primary-gold hidden">Your message has been received! Our curator will contact you soon.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-bg-deep border-t border-primary-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:flex md:justify-between md:items-center">
+            <!-- Copyright -->
+            <p class="text-center text-sm text-text-muted md:order-2 md:text-left">
+                &copy; 2025 Aab-e-Hayaat. All rights reserved. The Water of Life.
+            </p>
+
+            <!-- Footer Links -->
+            <div class="flex justify-center space-x-6 mt-4 md:mt-0 md:order-1">
+                <a href="#" class="text-text-muted hover:text-primary-gold text-sm">Shipping & Returns</a>
+                <a href="#" class="text-text-muted hover:text-primary-gold text-sm">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Form functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const form = document.querySelector('form');
+            const formMessage = document.getElementById('form-message');
+
+            // Mobile Menu Toggle
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Simple Form Submission Handler (Prevents default and shows message)
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Simulate form clearing and success message display
+                form.reset();
+                formMessage.classList.remove('hidden');
+                
+                // Hide the message after 5 seconds
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 5000);
+
+                console.log('Attar Enquiry Form submission simulated.');
+            });
+        });
+    </script>
+</body>
+</html>
